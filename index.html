@@ -1,13 +1,14 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Document</title>
-	<link rel="stylesheet" href="assets/style/reset.css">
+	<title>Train Time</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="assets/css/reset.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-	<link rel="stylesheet" href="assets/style/style.css">
-	<link rel="stylesheet" href="">
+	
+	<link rel="stylesheet" href="assets/css/style.css">
+	
 
 <!-- SCRIPTS -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -16,13 +17,95 @@
 
 	<script src="assets/script/app.js"></script>
 
+	 <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+
 
 </head>
 <body>
 
 <div class="container">
+  <div class="jumbotron">
+    <h1>Any Time is Train Time</h1> 
+    <p>All Aboard. CHOO CHOO!!</p> 
+  </div>
+<!--  <h1>My First Bootstrap Page</h1>
+  <p>This is some text.</p>  -->
+
+<div class="panel panel-default panel-primary">
+<div class="panel-heading">
+	Train Schedule
+</div>
+
+
+<div class="panel-body">
+  <table id="train-table" class="table table-striped table-hover">
+		  	<thead>
+		      <tr>
+		        <th>Train Name</th>
+		        <th>Destination</th>
+		        <th class='centerData'>Frequency(min)</th>
+		        <th class='centerData'>Next Arrival</th>
+		        <th class='centerData'>Minutes Away</th>
+		      </tr>
+		    </thead>
+		    <tbody>
+<!-- 		      <tr>
+		        <td>content</td>
+		        <td>content</td>
+		        <td>content</td>
+		        <td>content</td>
+		        <td>content</td>
+		      </tr> -->
+		      </tbody>
+		  </table>
+	</div>
+</div>
+
+<div class="panel panel-default panel-primary">
+<div class="panel-heading">
+	Add A Train
+</div>
+
+
+<div class="panel-body">
+            <form role="form">
+              <div class="form-group">
+                <label for="train-name-input">
+                Train Name:</label>
+                <input  type="text" class="form-control" id="train-name-input">
+              </div>
+
+              <div class="form-group">
+                <label for="destination-input">Destination:</label>
+                <input  type="text" class="form-control" id="destination-input">
+              </div>
+
+              <div class="form-group">
+                <label for="firstTrain-input">
+                First Train HH:MM (military time)</label>
+                <input type="text" class="form-control" id="firstTrain-input">
+              </div>
+
+              <div class="form-group">
+                <label for="frequency-input">
+                Frequency (min)</label>
+                <input  type="text" class="form-control" id="frequency-input">
+              </div>
+
+              <button type="submit" class="btn btn-default" id="add-train" type="submit">Submit</button>
+            </form>
+
+
+             <!--   <button type="submit" class="btn btn-default" id="create-row">Create Row</button> -->
+            </form>
+
+	</div>
+</div>
+
+
+
 	
-	
+
 </div>
 	
 </body>

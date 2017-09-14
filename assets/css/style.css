@@ -1,0 +1,24 @@
+body,html {
+	margin:0px;
+	padding:0px;
+}
+
+.jumbotron {
+	text-align:center;
+}
+
+div{
+	/*border:1px solid black;*/
+}
+
+th {
+	font-weight:bold;
+}
+
+tr {
+	text-transform:capitalize;
+}
+
+.centerData {
+	text-align:center;
+}
